@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Sans-Serif;
+  background: linear-gradient(75deg, #192220 20%, #507867 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #4E7270;
+  text-shadow:
+  0 0 5px #395050,
+  0 0 10px #405050,
+  0 0 20px #255050;
+}
+
+#relogio-container {
+  background-color: rgb(41, 63, 60);
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#relogio-container:hover #relogio {
+  transform: scale(1.05);
+}
+
+#relogio {
+  font-size: 48px;
+  color: #37B07C;
+  text-shadow: 0 0 10px #3A946E, 0 0 20px #fff;
+  transition: transform 0.2s ease;
+}
+
+#data {
+  font-size: 20px;
+  color: #035c59;
+}
+
+.botao-12h button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(135deg, #0cb78a, #267d83);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.botao-12h button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.botao-12h button:active {
+  transform: scale(0.95);
+}
+
+.botao-lang {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.botao-lang button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botao-lang button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.botao-lang button:active {
+  transform: scale(0.95);
+}
